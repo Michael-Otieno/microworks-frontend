@@ -1,4 +1,4 @@
-import { BiSearch } from 'react-icons/bi';
+import Search from './Search';
 
 function Details(){
   return(
@@ -12,10 +12,7 @@ function Details(){
         </div>
       </nav>
       <div className='flex justify-between items-center mt-4'>
-        <div className='relative'>
-          <input className='bg-green-50 rounded-lg py-1.5 px-8 text-sm font-normal' type="search" placeholder="Search by email"/>
-          <BiSearch className='absolute top-2 w-10'/>
-        </div>
+        <Search/>
         <div>
           <p className='font-semibold p-1.5 bg-green-50 rounded-lg'>Download</p>
         </div>
