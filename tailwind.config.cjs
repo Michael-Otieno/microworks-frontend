@@ -18,8 +18,8 @@ module.exports = {
       'white':'#FFFFFF',
       'black':'#000000',
       'red':'#FE0C0C',
-      'blue':' #327EFF'
-      
+      'blue':' #327EFF',
+      'linksBg':"#D9D9D9",
       
     },
   },
