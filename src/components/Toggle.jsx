@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { HiDotsVertical } from "react-icons/hi";
-import { RiDeleteBin5Fill } from "react-icons/ri";
-import { FaEdit } from "react-icons/fa";
 import Edit from "./Edit";
+import Delete from "./Delete";
 
 function Toggle() {
   const [hide, setHide] = useState(false);
@@ -29,7 +28,7 @@ function Toggle() {
       >
         <div className="mt-1">
           <Edit/>
-          <RiDeleteBin5Fill />
+          <Delete />
         </div>
       </div>
     </div>
