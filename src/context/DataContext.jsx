@@ -24,7 +24,8 @@ export const DataProvider = ({ children }) => {
 
   const getList = async (query = "") => {
     let res = await Axios.get(
-      `http://127.0.0.1:8000/attendance-list?query=${query}`
+      `https://microworks-backend-production.up.railway.app/attendance-list?query=${query}`
+      
     );
     setList(res.data);
   
@@ -37,23 +38,13 @@ export const DataProvider = ({ children }) => {
   };
 
   const updateDetails = async (id,updateDetails) => {
-    // let res = await Axios.put(
-    //   `http://127.0.0.1:8000/attendance-list/${id}`
-    // );
     setList(list.map((peep) => peep.id === id ? updateDetails : peep))
-    // setList(res.data.map((peep) => peep.id === id ? updateDetails : peep))
-
-    // window.location.reload();
 
   }
 
 
   const deleteDetails = async (id) => {
-    // const headers = {
-    //   Authorization: `authTokens ${localStorage.getItem("authTokens")}`,
-    // }
-    await axios.delete(`http://127.0.0.1:8000/attendance-list/${id}`,{
-      // headers:headers,
+    await axios.delete(`https://microworks-backend-production.up.railway.app/attendance-list/${id}`,{
     })
       alert("Deleted successfully")
       getList()
