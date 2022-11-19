@@ -38,8 +38,6 @@ Users are be able to:
 - For any assistances, contact m.otieno205@gmail.com.
 
 
-## Acknowledgments
-- [Frontend Mentor](frontendmentor.io/challenges)
 
 ## MIT Licence
 Copyright (c) 2020 Michael Otieno
