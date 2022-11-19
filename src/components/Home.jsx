@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Axios from "axios";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Home({}) {
   const [full_name,setName] = useState('')
@@ -21,7 +21,7 @@ function Home({}) {
 
     await axios({
       method:'post',
-      url:"http://127.0.0.1:8000/attendance-list",
+      url:"https://microworks-backend-production.up.railway.app/attendance-list",
       Accept: "application/json, text/plain, */*",
       
       data:formField
@@ -46,7 +46,9 @@ function Home({}) {
           </h1>
         </div>
         <div className="mr-28">
-          <h2 className="text-sm font-semibold text-blue">Join Slack</h2>
+          <h2 className="text-sm font-semibold text-blue">
+            <Link to="/admin" >Admin Login</Link>
+          </h2>
         </div>
       </nav>
       <div className="flex justify-between items-center mt-16">
@@ -54,7 +56,6 @@ function Home({}) {
           <form 
             className="border border-tableBorderColor rounded-lg  relative flex flex-col w-4/5 bg-white outline-none h-full"
           >
-            {/*header*/}
             <div className="flex items-start justify-between p-5 rounded-t">
               <h3 className="text-sm font-semibold">Attendance</h3>
             </div>
