@@ -20,6 +20,9 @@ module.exports = {
       'red':'#FE0C0C',
       'blue':' #327EFF',
       'linksBg':"#D9D9D9",
+      'homeBg':'#262626;',
+      'homeBg2':'#C1EAD9',
+      
       
     },
   },

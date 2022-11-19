@@ -3,11 +3,12 @@ import { HiDotsVertical } from "react-icons/hi";
 import Edit from "./Edit";
 import Delete from "./Delete";
 
-function Toggle() {
+function Toggle({id,thePerson}) {
   const [hide, setHide] = useState(false);
   function ShowNotification() {
     setHide((prevMode) => !prevMode);
   }
+  
 
   return (
     <div className="text-center relative">
@@ -27,8 +28,8 @@ function Toggle() {
         }
       >
         <div className="mt-1">
-          <Edit/>
-          <Delete />
+          <Edit thePerson={thePerson}/>
+          <Delete id={id}/>
         </div>
       </div>
     </div>
