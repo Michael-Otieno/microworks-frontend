@@ -8,10 +8,6 @@ Users are be able to:
     - admin
     - admin1234/
 
-## Screenshot
-
-![<img src="./desktop-preview.jpg" alt="image" width="400px" height="300px"](./desktop-preview.jpg)
-<!-- ![<img src="./mobile-design-detail-dark.jpg" alt="image" width="500px" height="400px"](./mobile-design-detail-dark.jpg) -->
 
 ## Live link
 
